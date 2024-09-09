@@ -1,0 +1,81 @@
+/* h1{
+    color:brown;
+}
+p{
+    color:chartreuse;
+    background-color:crimson
+} */
+
+/* *{
+    color:pink;
+} */
+h1{
+    text-align:right;
+    font-weight:400;
+    text-decoration:orange line-through wavy;
+    letter-spacing:5px;
+    font-size:75px;
+    font-family:fantasy;
+
+}
+/* a{
+    text-decoration:none;
+} */
+/* p{
+    line-height:5;
+} */
+h2,h3{
+    color:plum;
+}
+#txt{
+    font-size:50px;
+    /* background-color:rgb(219, 167, 36); */
+    
+}
+.tag{
+    color:royalblue;
+    background-color:lightcoral;
+    font-size:40px
+}
+/* div p{
+    color:cornflowerblue;
+} */
+h1+p{
+    background-color:magenta;
+}
+div > a{
+    color:purple;
+    background-color: whitesmoke;
+    font-size:29px;
+    font-weight:bold;
+}
+input[type="text"]{
+    color: turquoise;
+}
+button{
+    background-color:lawngreen;
+    color:black;
+}
+button:hover{
+    background-color: red;
+    color:white;
+}
+button:active{
+    background-color:orchid;
+}
+
+.power:nth-of-type(2n){
+    color:rgb(107, 40, 88);
+    font-weight:800 
+    !important;
+    
+}
+p::first-letter{
+    font-size:100px;
+}
+div>p::first-line{
+    color:rgb(23, 129, 211);
+}
+::selection{
+    color:chocolate;
+}

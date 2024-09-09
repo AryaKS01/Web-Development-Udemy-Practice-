@@ -1,0 +1,15 @@
+/* section{
+   width:80%;
+   height:800px;
+   background-image:url("https://i.pinimg.com/236x/32/98/49/3298493984de045822456b2cfee2145d.jpg");
+   
+   background-size:cover;
+
+   margin:0 auto;
+
+} */
+section{
+    font-family: "Sevillana", cursive;
+    font-weight: 400;
+    font-style: normal;
+}

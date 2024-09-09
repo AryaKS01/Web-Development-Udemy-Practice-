@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Student Data</h1> 
+   <table>
+    <thead>
+        <tr>
+            <th rowspan="2">college students</th>
+        </tr>
+    <tr>
+       
+        <th>Name</th>
+        <th>age</th>
+        <th>gender</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Arya</td>
+        <td>23</td>
+        <td>M</td>
+    </tr>
+    <tr>
+        <td>Aditi</td>
+        <td>21</td>
+        <td>F</td>
+    </tr>
+    <tr>
+        <td>Arun</td>
+        <td>28</td>
+        <td>M</td>
+    </tr>
+    </tbody>
+
+   </table>
+   <hr>
+   <button>outside form</button>
+   <h1>Form demo</h1>
+
+   <form action="/tacos">
+    <label for="username">enter ur username:</label>
+    <input type="text" id="username" placeholder="username" name="name"><br>
+
+    <label for="password">enter ur password:</label>
+    <input type="password" id="password" placeholder="password" name="pass"><br>
+
+    <label for="num">enter ur number:</label>
+    <input type="number" id="num" placeholder="enter ur number"><br>
+
+    <button type="button">button inside form (but wont submit)</button>
+
+    <label for="color">enter ur color:</label>
+    <input type="color" id="color">
+
+    <button>submit!!</button>
+   </form>
+   <h2>google search</h2>
+   <form action="https://www.google.com/search">
+    <input type="text" name="q">
+    <button>submit google</button>
+   </form>
+   <hr>
+   <form action="">
+    <input type="checkbox" name="agree_tos" id="agree">
+    <label for="agree">i am OK</label>
+    <button>submit chk</button>
+   
+   <hr>
+   
+   <p>
+    <input type="radio" name="size" value="xs" id="xs">
+    <label for="xs">XS</label>
+    <input type="radio" name="size" value="m" id="m">
+    <label for="m">M</label>
+    <input type="radio" name="size" value="L" id="L">
+    <label for="L">L</label>
+</p>
+    <p>
+        <label for="food">dropbox of food</label>
+        <select id="food" name="food">
+            <option value="">Please select ur option</option>
+            <option value="chciken">chciken</option>
+            <option value="fish">fish</option>
+            <option value="veg">veg</option>
+        </select>
+    </p>
+    <p>
+        <label for="diabetes">how much diabetes u want?</label>
+        <input type="range" id="diabetes" min="1" max="100" value="65" name="diab">
+    </p>
+    <p>
+        <label for="req">any special requests?</label><br>
+        <textarea id="req" name="req?" placeholder="enter ur text" row="30" cols="49"></textarea>
+    </p>
+    <p>
+        <label for="txt">enter valid username</label>
+        <input type="text" id="txt" name="txt" minlegth=5 maxlength="20" required>
+    </p>
+    <p>
+        <label for="email">enter valid email</label>
+        <input type="email" id="email" name="mail" required>
+    </p>
+   <button>submit ALL</button>
+</form>
+</body>
+</html>

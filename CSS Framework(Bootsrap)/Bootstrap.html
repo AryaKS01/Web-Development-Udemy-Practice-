@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Basics</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Bootstrap.css" />
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid text-bg-primary ">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#idnav" aria-controls="idnav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="idnav">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Features</a>
+            </div>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+      </div>
+
+      </div>
+     
+      
+    </nav>
+    <div class="container">
+      <h1 class="display-1 text-primary">Bootstrap Playground</h1>
+      <h2 class="display-4">
+        Display Typography<span
+          class="badge text-bg-secondary text-bg-success rounded-pill"
+          >3</span
+        >
+      </h2>
+      <button type="button" class="btn btn-primary">
+        Primary <span class="badge text-bg-secondary">4</span>
+      </button>
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-outline-danger btn-lg">
+        Danger
+      </button>
+      <button type="button" class="btn btn-secondary btn-sm" disabled>
+        Small disabled button
+      </button>
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-primary">1</button>
+        <button type="button" class="btn btn-warning">2</button>
+        <button type="button" class="btn btn-success">3</button>
+      </div>
+      <h3>Alerts</h3>
+      <div class="alert alert-danger alert-dismissible fade-show" role="alert">
+        <h4 class="alert-heading">Well Done</h4>
+        Danger! You are about to end the world!!
+        <button aria-label="Close" class="btn-close" data-bs-dismiss="alert">
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+      <p class="lead">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+        quaerat quod libero iure obcaecati, tempore atque. Hic, beatae
+        distinctio, molestias odio sequi facere illum enim explicabo adipisci,
+        ut voluptatem. Delectus! Facilis beatae facere quaerat placeat officiis
+        eum repellendus esse maiores voluptatem ab nemo, ipsum amet voluptatum
+        id doloremque. Adipisci sed beatae quae quisquam nam error dolore
+        eligendi necessitatibus quia hic.
+      </p>
+      <blockquote class="blockquote text-end">
+        <p>A well-known quote, contained in a blockquote element.</p>
+        <footer class="blockquote-footer">Mr. Arya Ipsum</footer>
+      </blockquote>
+      <h1>The Grid System</h1>
+      <div class="row">
+        <div class="col-6 text-bg-success">I am 6 units</div>
+        <div class="col-4 text-bg-secondary">I am 4 units</div>
+        <div class="col-2 text-bg-primary">I am 2 units</div>
+      </div>
+      <div class="row">
+        <div class="col text-bg-success">I am auto sized</div>
+        <div class="col text-bg-secondary">I am auto sized</div>
+      </div>
+      <h3 class="display-4">Responsive Grid</h3>
+      <div class="row align-items-center">
+        <div class="col-md-6 col-lg-3 text-bg-primary">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum quas
+          illo libero a temporibus dolore doloribus eaque eos provident
+          voluptate. Laboriosam neque suscipit explicabo consequatur error nisi
+          in ea voluptate!
+        </div>
+        <div class="col-md-6 col-lg-3 text-bg-secondary">
+          I am auto sized Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Corrupti vel id sed cum delectus, autem iste officia,
+          consequatur eos, natus maiores aperiam dolore minus minima voluptate.
+          Deserunt tempora quas dolor? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto ex sunt harum non nisi laborum sint quasi. Modi laborum ea, quia quis velit, culpa illo maiores assumenda quaerat corporis sed.
+          Accusamus quos dignissimos, vitae commodi voluptatem eius aut aperiam nemo qui officiis deleniti ipsa, voluptas quia dolore aliquam libero error eaque! Hic incidunt tempora quae autem et natus nihil animi.
+        </div>
+
+        <div class="col-md-6 col-lg-3 text-bg-primary">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum quas
+          illo libero a temporibus dolore doloribus eaque eos provident
+          voluptate. Laboriosam neque suscipit explicabo consequatur error nisi
+          in ea voluptate!
+        </div>
+        <div class="col-md-6 col-lg-3 text-bg-secondary align-self-end">
+          I am auto sized Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Corrupti vel id sed cum delectus, autem iste officia,
+          consequatur eos, natus maiores aperiam dolore minus minima voluptate.
+          Deserunt tempora quas dolor?
+        </div>
+      </div>
+      <h3>Justify Content</h3>
+      <div class="row border justify-content-center justify-content-lg-start justify-content-xl-between">
+        <div class="col-4 text-bg-primary">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum quas
+          illo libero a temporibus dolore doloribus eaque eos provident
+          voluptate. Laboriosam neque suscipit explicabo consequatur error nisi
+          in ea voluptate!
+        </div>
+        <div class="col-4 text-bg-info">
+          I am auto sized Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Corrupti vel id sed cum delectus, autem iste officia,
+          consequatur eos, natus maiores aperiam dolore minus minima voluptate.
+          Deserunt tempora quas dolor? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto ex sunt harum non nisi laborum sint quasi. Modi laborum ea, quia quis velit, culpa illo maiores assumenda quaerat corporis sed.
+          Accusamus quos dignissimos, vitae commodi voluptatem eius aut aperiam nemo qui officiis deleniti ipsa, voluptas quia dolore aliquam libero error eaque! Hic incidunt tempora quae autem et natus nihil animi.
+        </div>
+        <hr>
+        <h1 class="display-2">Forms</h1>
+        <form action="#nowhere">
+          <div class="row g-3">
+          <div class="mb-3 col-md-6">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Email">
+          </div>
+          <div class="mb-3 col-md-6">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password"></div>
+          </div>
+            <div class="mb-3">
+              <label for="select">Select</label>
+              <select class="form-control" name="select" id="select">
+                <option value="dl">delhi</option>
+                <option value="kl">kolkata</option>
+              </select>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Sign me up
+              </label>
+            </div>
+        </form>
+        <h1>icons</h1>
+        <button type="button" class="btn btn-success btn-lg">Recycle<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-recycle" viewBox="0 0 16 16">
+          <path d="M9.302 1.256a1.5 1.5 0 0 0-2.604 0l-1.704 2.98a.5.5 0 0 0 .869.497l1.703-2.981a.5.5 0 0 1 .868 0l2.54 4.444-1.256-.337a.5.5 0 1 0-.26.966l2.415.647a.5.5 0 0 0 .613-.353l.647-2.415a.5.5 0 1 0-.966-.259l-.333 1.242zM2.973 7.773l-1.255.337a.5.5 0 1 1-.26-.966l2.416-.647a.5.5 0 0 1 .612.353l.647 2.415a.5.5 0 0 1-.966.259l-.333-1.242-2.545 4.454a.5.5 0 0 0 .434.748H5a.5.5 0 0 1 0 1H1.723A1.5 1.5 0 0 1 .421 12.24zm10.89 1.463a.5.5 0 1 0-.868.496l1.716 3.004a.5.5 0 0 1-.434.748h-5.57l.647-.646a.5.5 0 1 0-.708-.707l-1.5 1.5a.5.5 0 0 0 0 .707l1.5 1.5a.5.5 0 1 0 .708-.707l-.647-.647h5.57a1.5 1.5 0 0 0 1.302-2.244z"/>
+        </svg></button>
+    </div>
+    <h1>Border</h1>
+    <div class="row">
+      <div class="col-md-4 border rounded">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel saepe accusantium inventore et minus quod molestias maiores explicabo aut eligendi, dicta sapiente animi. Ipsa voluptatum saepe mollitia beatae, libero eos.
+      </div> 
+      <button class="btn btn-danger p-0 p-sm-1 p-md-2 p-lg-3 p-xl-5">i chan ge</button>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
