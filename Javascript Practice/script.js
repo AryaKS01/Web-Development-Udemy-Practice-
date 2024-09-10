@@ -108,12 +108,51 @@
 //     }
 // }
 
-const myMath={
-    PI:3.1485,
-    square(num){
-        return num*num;
-    },
-    cube(num){
-        return num**3;
-    }
-}
+// const myMath={
+//     PI:3.1485,
+//     square(num){
+//         return num*num;
+//     },
+//     cube(num){
+//         return num**3;
+//     }
+// }
+
+const numbers=[1,2,4,5,7,6];
+// numbers.forEach(function(el){
+//     console.log(el);
+// })
+
+// for(let ell of numbers){
+//     console.log(ell);
+// }
+
+// const mapss=numbers.map(function(ele){
+//    return ele*2;
+// })
+
+// const add=(x, y) =>{
+//     return x+y;
+// }
+// const rollDie=()=>(
+//    Math.random()
+// ); //with() u dont have to write return keyword its called implicit returns
+
+// setTimeout(()=>{
+//     console.log("hello");
+// }, 3000)
+
+// const id=setInterval(()=>{
+//     console.log(Math.random())
+// }, 3000)
+
+// const fill=numbers.filter((n)=>{
+//     return n<4;
+// })
+
+// let eve = numbers.every((x)=>x>=4);
+// let ee = numbers.some((x)=>x>=4);
+
+const total= numbers.reduce((num1, num2) =>{
+    return num1+num2;
+})
