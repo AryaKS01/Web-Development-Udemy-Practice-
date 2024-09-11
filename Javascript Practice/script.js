@@ -153,6 +153,20 @@ const numbers=[1,2,4,5,7,6];
 // let eve = numbers.every((x)=>x>=4);
 // let ee = numbers.some((x)=>x>=4);
 
-const total= numbers.reduce((num1, num2) =>{
-    return num1+num2;
-})
+// const total= numbers.reduce((num1, num2) =>{
+//     return num1+num2;
+// })
+
+// function rollDie(num=6){
+//     return Math.floor(Math.random()*num)+1;
+// }
+
+// const dogs =["name", "game"];
+
+// const all=[...numbers, ...dogs];
+
+function add(...nums){
+    return nums.reduce((x,y)=>{
+        return x+y;
+    })
+}
