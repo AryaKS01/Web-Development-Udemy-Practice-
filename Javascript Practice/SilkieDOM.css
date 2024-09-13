@@ -26,3 +26,9 @@ img.square {
 .tocnumber {
     color: black;
 }
+.purple{
+    color:purple;
+}
+.border{
+    border:2px solid red;
+}
