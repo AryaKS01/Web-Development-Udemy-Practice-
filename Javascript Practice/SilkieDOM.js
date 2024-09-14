@@ -37,3 +37,14 @@
 //  li.parentElement.removeChild(li);
 // const ul = document.querySelector("ul");
 // ul.removeChild(li);
+
+const btn = document.querySelector("#v2");
+
+btn.onclick = function(){
+    console.log("it worked");
+}
+
+function scream(){
+    console.log("AAAAAAAAAAAAAAAAAAHH");
+}
+btn.onmouseenter = scream;
