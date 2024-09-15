@@ -38,13 +38,36 @@
 // const ul = document.querySelector("ul");
 // ul.removeChild(li);
 
-const btn = document.querySelector("#v2");
+// const btn = document.querySelector("#v2");
 
-btn.onclick = function(){
-    console.log("it worked");
-}
+// btn.onclick = function(){
+//     console.log("it worked");
+// }
 
-function scream(){
-    console.log("AAAAAAAAAAAAAAAAAAHH");
-}
-btn.onmouseenter = scream;
+// function scream(){
+//     console.log("AAAAAAAAAAAAAAAAAAHH");
+// }
+// btn.onmouseenter = scream;
+
+// const btn3 = document.querySelector("#v3");
+// btn3.addEventListener("dblclick", function(){
+//     alert("clickcyyy");
+// })
+// const button = document.querySelector("#color");
+// button.addEventListener("click", function(){
+   
+   
+//     document.body.style.backgroundColor= makeRand();
+// })
+
+// function makeRand(){
+//     const r = Math.floor(Math.random()*255);
+//     const g = Math.floor(Math.random()*255);
+//     const b = Math.floor(Math.random()*255);
+//     return `rgb(${r}, ${g}, ${b})`;
+// }
+
+const input = document.querySelector("#in");
+input.addEventListener("keydown", function(){
+    console.log("keydownnnnnn");
+})
