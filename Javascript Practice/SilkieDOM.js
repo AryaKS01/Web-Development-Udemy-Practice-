@@ -71,14 +71,20 @@
 // input.addEventListener("keydown", function(){
 //     console.log("keydownnnnnn");
 // })
-const form = document.querySelector("#ok");
-const input = document.querySelector("#catsname");
-const list = document.querySelector("#cats");
-form.addEventListener("submit", function(e){
-    e.preventDefault();
-    const catName = input.value;
-    const newLi = document.createElement("li");
-    newLi.innerText=catName;
-    console.log(newLi);
-    list.append(newLi);
+// const form = document.querySelector("#ok");
+// const input = document.querySelector("#catsname");
+// const list = document.querySelector("#cats");
+// form.addEventListener("submit", function(e){
+//     e.preventDefault();
+//     const catName = input.value;
+//     const newLi = document.createElement("li");
+//     newLi.innerText=catName;
+//     console.log(newLi);
+//     list.append(newLi);
+// })
+
+const input = document.querySelector("#in");
+const h1 = document.querySelector("#h1");
+input.addEventListener("input", function(e){
+    h1.innerText = input.value;
 })
