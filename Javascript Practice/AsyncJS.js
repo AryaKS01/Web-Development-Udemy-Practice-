@@ -86,21 +86,71 @@
 //         console.log(err);
 //     })
 
-const login=async (username, password)=>{
-    if(!username || !password){
-        throw "missing credentials";
-    }else if(password === "okk"){
-        return "welcome!";
-    }
-    throw "invalid password";
-}
+// const login=async (username, password)=>{
+//     if(!username || !password){
+//         throw "missing credentials";
+//     }else if(password === "okk"){
+//         return "welcome!";
+//     }
+//     throw "invalid password";
+// }
 
-login("sfcsdfe","okk")
-    .then((data)=>{
-        console.log("looged in");
-        console.log(data);
-    })
-    .catch((err)=>{
-        console.log("ERROR");
-        console.log(err);
-    })
+// login("sfcsdfe","okk")
+//     .then((data)=>{
+//         console.log("looged in");
+//         console.log(data);
+//     })
+//     .catch((err)=>{
+//         console.log("ERROR");
+//         console.log(err);
+//     })
+
+// const req=new XMLHttpRequest();
+
+// req.onload=function(){
+//     console.log("it loaded!");
+//    const data= JSON.parse(this.responseText);
+//    console.log(data);
+// }
+// req.oneerror=function(){
+//     console.log("error!!");
+//     console.log(this);
+// }
+
+// req.open("GET", "https://swapi.dev/api/people/1/");
+// req.send();
+
+// fetch("https://swapi.dev/api/people/1/")
+//     .then((res)=>{
+//         console.log("resolved",res);
+//         return res.json();
+//     })
+//     .then((data)=>{
+//         console.log(data);
+//     })
+//     .catch((e)=>{
+//         console.log("eroor",e);
+//     })
+
+    // const loadStarWarsPeople=async()=>{
+    //     try{
+    //         const res=await fetch("https://swapi.dev/api/people/1/");
+    //         const data=await res.json();
+    //         console.log(data);
+    //         const res2=await fetch("https://swapi.dev/api/people/2/");
+    //         const data2=await res2.json();
+    //         console.log(data2);}
+    //     catch(e){
+    //         console.log("error", e);
+
+    //     }
+    // }
+    // loadStarWarsPeople();
+
+    axios.get("https://swapi.dev/api/people/1/")
+        .then((res)=>{
+            console.log("resolved", res);
+        })
+        .catch((e)=>{
+            console.log("error",e);
+        })
