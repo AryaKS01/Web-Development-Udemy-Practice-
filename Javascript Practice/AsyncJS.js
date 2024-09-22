@@ -147,10 +147,65 @@
     // }
     // loadStarWarsPeople();
 
-    axios.get("https://swapi.dev/api/people/1/")
-        .then((res)=>{
-            console.log("resolved", res);
-        })
-        .catch((e)=>{
-            console.log("error",e);
-        })
+    // axios.get("https://swapi.dev/api/people/1/")
+    //     .then((res)=>{
+    //         console.log("resolved", res);
+    //     })
+    //     .catch((e)=>{
+    //         console.log("error",e);
+    //     })
+
+    // const jokes =document.querySelector("#jokes");
+
+    // const dadJokes=async()=>{
+    //     const config={ headers: {Accept:"application/json"}}
+    //     const res=await axios.get("https://icanhazdadjoke.com/", config );
+    //     // console.log(res.data.joke);
+    //     const newLi=document.createElement("li");
+    //     newLi.append(res.data.joke);
+    //     jokes.append(newLi);
+    // }
+
+    // const jokes =document.querySelector("#jokes");
+    // const button=document.querySelector("button");
+
+    // const addNewJoke= async()=>{
+    //     const jokeText= await dadJokes();
+    //     // console.log(jokeText);
+    //     const newLi=document.createElement("li");
+    //     newLi.append(jokeText);
+    //     jokes.append(newLi);
+    // }
+
+    // const dadJokes=async()=>{
+    //     try{
+    //         const config={ headers: {Accept:"application/json"}}
+    //         const res=await axios.get("https://icanhazdadjoke.com/", config );
+    //         return res.data.joke;
+    //     }catch(e){
+    //         return "no jokes available SORY;<"
+    //     }
+        
+    // }
+    // button.addEventListener("click",addNewJoke);
+
+    const form=document.querySelector("#searchForm");
+    form.addEventListener("submit",async function(e){
+        e.preventDefault();
+        const searchTerm=form.elements.query.value;
+        const config={params:{q:searchTerm}}
+        const res=await axios.get(` https://api.tvmaze.com/search/shows`,config);
+        makeImg(res.data);
+        form.elements.query.value="";
+        
+    })
+
+    const makeImg=(shows)=>{
+        for(let result of shows){
+            if(result.show.image){
+            const img=document.createElement("img");
+            img.src=result.show.image.medium;
+            document.body.append(img);
+            }
+        }
+    }
