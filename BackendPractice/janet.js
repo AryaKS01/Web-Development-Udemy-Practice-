@@ -1,4 +1,4 @@
-module.exports={
-    name:"janet",
-    color:"orange"
-}
+// module.exports={
+//     name:"janet",
+//     color:"orange"
+// }
