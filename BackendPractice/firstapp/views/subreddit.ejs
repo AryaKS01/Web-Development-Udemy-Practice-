@@ -1,11 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= subreddit %></title>
-</head>
+<%- include("partials/head")%>
 <body>
-    <h1>Browsing the <%=subreddit%> subreddit</h1>
+    <%- include("partials/navbar")%>
+      <div class="container">
+    <h1>Browsing the <%=name%> subreddit</h1>
+    <h2><%= description %></h2>
+    <p><%=subscribers%> Total Subs</p>
+    <hr>
+    <% for(let post of posts){ %>
+        <article>
+            <h3><%=post.title%></h3>
+            <% if(post.img){ %>
+                <img src="<%=post.img%>" alt="">
+            <% } %>
+        </article>
+    <% } %>
+</div>
 </body>
 </html>
