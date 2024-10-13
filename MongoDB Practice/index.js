@@ -32,9 +32,35 @@ const movieSchema=new mongoose.Schema({
 
 });
 const Movie=mongoose.model("Movie",movieSchema);
-const amadeus=new Movie({
-    title:"Amadeus",
-    year:1986,
-    score:9.2,
-    rating:"R"})
+// const amadeus=new Movie({
+//     title:"Amadeus",
+//     year:1986,
+//     score:9.2,
+//     rating:"R"})
+
+// Movie.insertMany([{
+//     title:"Amaelie",
+//     year:200,
+//     score:8.2,
+//     rating:"R"
+// },{
+//     title:"Alien",
+//     year:1979,
+//     score:8.1,
+//     rating:"R" 
+// },{
+//     title:"The iron giant",
+//     year:1999,
+//     score:7.5,
+//     rating:"PG"
+// },{
+//     title:"Stand by me",
+//     year:1986,
+//     score:8.6,
+//     rating:"R"
+// }])
+//     .then((data)=>{
+//         console.log("IT WORKED");
+//         console.log(data);
+//     })
 
